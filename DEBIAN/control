@@ -1,4 +1,4 @@
-Package: lw-trains
+Package: lw-h264-live-player
 Architecture: armhf
 Depends: nodejs
 Description: fork of h264-live-player to stream raspivid to browser in real time
