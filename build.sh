@@ -1,5 +1,7 @@
 #! /bin/bash
 
+npm install
+
 mkdir -p build/usr/share/h264-live-player
 mkdir -p build/etc/systemd/system
 
@@ -10,6 +12,7 @@ cp -r vendor build/usr/share/h264-live-player/
 cp -r *.js build/usr/share/h264-live-player/
 cp -r DEBIAN build/
 cp h264-live-player.service build/etc/systemd/system/
+cp -r node_modules build/usr/share/h264-live-player/
 
 mkdir -p out
 
