@@ -1,0 +1,4 @@
+#!/bin/bash
+
+systemctl enable h264-live-player
+systemctl restart h264-live-player
