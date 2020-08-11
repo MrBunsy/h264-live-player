@@ -1,0 +1,18 @@
+# /lib/systemd/system/h264-live-playe.service
+[Unit]
+Description=h264-live-player raspivid streaming to browser
+After=syslog.target
+Before=nginx.service
+
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /usr/share/h264-live-player/server-rpi.js
+StandardOutput=journal
+StandardError=journal
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+RequiredBy=nginx.service
